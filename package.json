@@ -1,0 +1,24 @@
+{
+  "name": "falcor-lab-employees-cloud",
+  "version": "1.0.0",
+  "description": "Cloud portion of the falcor lab",
+  "main": "application.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daferoli/Falcor_Lab_Employees_Cloud.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daferoli/Falcor_Lab_Employees_Cloud/issues"
+  },
+  "homepage": "https://github.com/daferoli/Falcor_Lab_Employees_Cloud#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "falcor-express": "^0.1.4",
+    "falcor-router": "^0.8.0"
+  }
+}
