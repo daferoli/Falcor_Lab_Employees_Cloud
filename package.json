@@ -4,6 +4,7 @@
   "description": "Cloud portion of the falcor lab",
   "main": "application.js",
   "scripts": {
+    "start": "env NODE_PATH=. node application.js",
     "test": "mocha"
   },
   "repository": {
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/daferoli/Falcor_Lab_Employees_Cloud#readme",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "express": "^4.15.2",
     "falcor-express": "^0.1.4",
-    "falcor-router": "^0.8.0"
+    "falcor-json-graph": "^1.1.7",
+    "falcor-router": "^0.8.0",
+    "lodash": "^4.17.4"
   }
 }
