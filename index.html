@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src='/node_modules/falcor/dist/falcor.browser.js'></script>
+    <script>
+        //create model:
+        var model = new falcor.Model({
+            source: new falcor.HttpDataSource('/model.json')
+        });
+        //logging:
+        var log = console.log.bind(console);
+        var jlog = function(x) { document.write('<div>' + JSON.stringify(x, null, 3) + '</div>'); };
+        var jerror = function(x) { console.error(JSON.stringify(x, null, 3)); };
+        //examples:
+        //model.get(['model','officeById', 1001, 'employees', 0, ['name', 'email','title']]).then(jlog, jerror);
+        //model.get(['model','employeeById', [10001,10101], ['name', 'email']]).then(jlog, jerror);
+        //model.get(['model','officeById', 1001, 'officeManager', ['name','email']]).then(jlog, jerror);
+        //model.get(['model','employeeById', 10001, 'office', 'address']).then(jlog, jerror);
+        //model.get(["model","employeeById", [10001,10101], "name"]).then(jlog, jerror);
+        model.get(["model","employeeById", 10001, "department", "budget"]).then(jlog, jerror);
+    </script>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</head>
+<body>
+</body>
+</html>

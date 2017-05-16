@@ -17,3 +17,7 @@ const CLOUD_PORT = 8000;
 app.listen(CLOUD_PORT, function(){
   console.log('cloud app started on port: ' + CLOUD_PORT);
 });
+
+var livereload = require('livereload');
+var lrserver = livereload.createServer();
+lrserver.watch(__dirname);
