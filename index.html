@@ -16,9 +16,20 @@
         //model.get(['model','officeById', 1001, 'officeManager', ['name','email']]).then(jlog, jerror);
         //model.get(['model','employeeById', 10001, 'office', 'address']).then(jlog, jerror);
         //model.get(["model","employeeById", [10001,10101], "name"]).then(jlog, jerror);
-        model.get(["model","employeeById", 10001, "department", "budget"]).then(jlog, jerror);
+        //model.get(["model","employeeById", 10001, "department", "budget"]).then(jlog, jerror);
+      //   model.set({paths:["model","employeeById",10001,"name"], jsonGraph:{
+      //     json:{
+      //       model:{
+      //         departmentById:{
+      //           101:{
+      //             name:"Engineering"
+      //           }
+      //         }
+      //       }
+      //     }
+      //   },
+      // invalidated:[["model","officeById","1001","employees"]]}).then(jlog, jerror);
     </script>
-    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
 </head>
 <body>
 </body>
